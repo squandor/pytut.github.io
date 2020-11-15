@@ -25,8 +25,8 @@ author: S.Schins
 
 # This URL is the main address for absolute links. Don't include a slash at the end.
 #
-url: 'http://192.168.1.14:4000'
-customurl: 'http://192.168.1.14:4000'
+url: 'https://python-tutorials.nl'
+customurl: 'https://python-tutorials.nl'
 baseurl: ''
 
 # This is for the editing function in _/includes/improve_content
@@ -39,7 +39,7 @@ improve_content: https://github.com/Phlow/feeling-responsive/edit/gh-pages
 # Example: <img src="{{ site.customurlimg }}{{ post.image.title }}" />
 # Markdown-Example for posts ![Image Text]({{ site.customurlimg }}image.jpg)
 #
-customurlimg: 'http://192.168.1.14:4000/images/'
+customurlimg: 'https://python-tutorials.nl/images/'
 
 
 # Logo size is 600x80 pixels
