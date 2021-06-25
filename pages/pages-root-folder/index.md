@@ -16,7 +16,7 @@ widget2:
   title: "About"
   url: 'https://python-tutorials.nl/about/'
   text: 'About page'
-  image: About_Me.jpeg
+#  image: About_Me.jpeg
 
 #
 # Use the call for action to show a button on the frontpage
