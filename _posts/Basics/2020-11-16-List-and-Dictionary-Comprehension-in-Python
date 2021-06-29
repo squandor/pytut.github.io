@@ -3,7 +3,8 @@ layout: page
 #
 # Content
 #
-subheadline: "List and Dictionary Comprehension in Python"title: "List and Dictionary Comprehension in Python"categories:
+subheadline: "List and Dictionary Comprehension in Python"
+title: "List and Dictionary Comprehension in Python"categories:
   - Basics
 tags:
   - Python

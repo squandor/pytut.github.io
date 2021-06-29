@@ -3,7 +3,8 @@ layout: page
 #
 # Content
 #
-subheadline: "Functions in Python"title: "Functions in Python"categories:
+subheadline: "Functions in Python"
+title: "Functions in Python"categories:
   - Basics
 tags:
   - Python

@@ -3,7 +3,8 @@ layout: page
 #
 # Content
 #
-subheadline: "Import Statements in Python"title: "Import Statements in Python"categories:
+subheadline: "Import Statements in Python"
+title: "Import Statements in Python"categories:
   - Basics
 tags:
   - Python

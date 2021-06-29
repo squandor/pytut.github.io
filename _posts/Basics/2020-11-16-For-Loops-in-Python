@@ -3,7 +3,8 @@ layout: page
 #
 # Content
 #
-subheadline: "For Loops in Python"title: "For Loops in Python"categories:
+subheadline: "For Loops in Python"
+title: "For Loops in Python"categories:
   - Basics
 tags:
   - Python

@@ -3,7 +3,8 @@ layout: page
 #
 # Content
 #
-subheadline: "Nested Loops in Python"title: "Nested Loops in Python"categories:
+subheadline: "Nested Loops in Python"
+title: "Nested Loops in Python"categories:
   - Basics
 tags:
   - Python

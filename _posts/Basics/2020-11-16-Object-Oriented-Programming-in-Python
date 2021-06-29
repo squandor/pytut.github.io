@@ -3,7 +3,8 @@ layout: page
 #
 # Content
 #
-subheadline: "Object-Oriented Programming in Python"title: "Object-Oriented Programming in Python"categories:
+subheadline: "Object-Oriented Programming in Python"
+title: "Object-Oriented Programming in Python"categories:
   - Basics
 tags:
   - Python

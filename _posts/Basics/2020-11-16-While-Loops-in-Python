@@ -3,7 +3,8 @@ layout: page
 #
 # Content
 #
-subheadline: "While Loops in Python"title: "While Loops in Python"categories:
+subheadline: "While Loops in Python"
+title: "While Loops in Python"categories:
   - Basics
 tags:
   - Python

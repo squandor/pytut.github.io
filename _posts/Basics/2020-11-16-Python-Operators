@@ -3,7 +3,8 @@ layout: page
 #
 # Content
 #
-subheadline: "Python Operators"title: "Python Operators"categories:
+subheadline: "Python Operators"
+title: "Python Operators"categories:
   - Basics
 tags:
   - Python

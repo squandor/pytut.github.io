@@ -3,7 +3,8 @@ layout: page
 #
 # Content
 #
-subheadline: "Variable Definitions in Python"title: "Variable Definitions in Python"categories:
+subheadline: "Variable Definitions in Python"
+title: "Variable Definitions in Python"categories:
   - Basics
 tags:
   - Python

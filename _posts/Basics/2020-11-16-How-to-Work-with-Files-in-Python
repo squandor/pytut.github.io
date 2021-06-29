@@ -3,7 +3,8 @@ layout: page
 #
 # Content
 #
-subheadline: "How to Work with Files in Python"title: "How to Work with Files in Python"categories:
+subheadline: "How to Work with Files in Python"
+title: "How to Work with Files in Python"categories:
   - Basics
 tags:
   - Python

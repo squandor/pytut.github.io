@@ -3,7 +3,8 @@ layout: page
 #
 # Content
 #
-subheadline: "Exception Handling in Python"title: "Exception Handling in Python"categories:
+subheadline: "Exception Handling in Python"
+title: "Exception Handling in Python"categories:
   - Basics
 tags:
   - Python

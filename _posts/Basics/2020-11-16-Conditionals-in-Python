@@ -3,7 +3,8 @@ layout: page
 #
 # Content
 #
-subheadline: "Conditionals in Python"title: "Conditionals in Python"categories:
+subheadline: "Conditionals in Python"
+title: "Conditionals in Python"categories:
   - Basics
 tags:
   - Python

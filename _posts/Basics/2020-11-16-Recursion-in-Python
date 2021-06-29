@@ -3,7 +3,8 @@ layout: page
 #
 # Content
 #
-subheadline: "Recursion in Python"title: "Recursion in Python"categories:
+subheadline: "Recursion in Python"
+title: "Recursion in Python"categories:
   - Basics
 tags:
   - Python
