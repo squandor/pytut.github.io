@@ -26,16 +26,19 @@ def factorial(n):
     if n == 0 or n == 1:
         return 1
     else:
-        return n * factorial(n-1){% endhighlight %}Recursive Factorial Function
+        return n * factorial(n-1)
+{% endhighlight %}Recursive Factorial Function
 {% highlight python %}
 def fibonacci(n):
     if n == 0 or n == 1:
         return n
     else:
-        return fibonacci(n-1) + fibonacci(n-2){% endhighlight %}The Fibonacci Function
+        return fibonacci(n-1) + fibonacci(n-2)
+{% endhighlight %}The Fibonacci Function
 {% highlight python %}
 def find_power(a, b):
     if b == 0:
         return 1
     else:
-        return a * find_power(a, b-1){% endhighlight %}Find a Power Recursively
+        return a * find_power(a, b-1)
+{% endhighlight %}Find a Power Recursively
