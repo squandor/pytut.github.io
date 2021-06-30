@@ -23,6 +23,7 @@ Great. Now you know the syntax of the basic data types and built-in data structu
 Arithmetic Operators in Python
 These operators are: 
 Addition: +
+
 {% highlight python %}
 >>> 5 + 6
 11
@@ -41,23 +42,29 @@ Addition: +
 {% endhighlight %}
 
 When they are strings, this operator concatenates the strings and when they are Boolean values, it performs a particular operation. 
-In Python, {% highlight python %}
+In Python, 
+{% highlight python %}
 True
 {% endhighlight %}
- is equivalent to {% highlight python %}
+ is equivalent to 
+{% highlight python %}
 1
 {% endhighlight %}
- and {% highlight python %}
+ and 
+{% highlight python %}
 False
 {% endhighlight %}
- is equivalent to {% highlight python %}
+ is equivalent to 
+{% highlight python %}
 0
 {% endhighlight %}
-. This is why the result is {% highlight python %}
+. This is why the result is 
+{% highlight python %}
 1 + 0 = 1
 {% endhighlight %}
 
 Subtraction: -
+
 {% highlight python %}
 >>> 5 - 6
 -1
@@ -79,6 +86,7 @@ Subtraction: -
 {% endhighlight %}
 
 Multiplication: *
+
 {% highlight python %}
 >>> 5 * 6
 30
@@ -112,6 +120,7 @@ Multiplication: *
 {% endhighlight %}
 
 Exponentiation: **
+
 {% highlight python %}
 >>> 6 ** 8
 1679616
@@ -139,6 +148,7 @@ Exponentiation: **
 {% endhighlight %}
 
 Division: /
+
 {% highlight python %}
 >>> 25 / 5
 5.0
@@ -171,13 +181,16 @@ Division: /
 -0.75
 {% endhighlight %}
 
-If you try to divide by {% highlight python %}
+If you try to divide by 
+{% highlight python %}
 0
 {% endhighlight %}
-, you will get a {% highlight python %}
+, you will get a 
+{% highlight python %}
 ZeroDivisionError
 {% endhighlight %}
 :
+
 {% highlight python %}
 >>> 5 / 0
 Traceback (most recent call last):
@@ -187,10 +200,12 @@ ZeroDivisionError: division by zero
 {% endhighlight %}
 
 Integer Division: //
-This operator returns an integer if the operands are integers. If they are floats, the result will be a float with {% highlight python %}
+This operator returns an integer if the operands are integers. If they are floats, the result will be a float with 
+{% highlight python %}
 .0
 {% endhighlight %}
  as the decimal part because it truncates the decimal part.
+
 {% highlight python %}
 >>> 5 // 6
 0
@@ -212,6 +227,7 @@ This operator returns an integer if the operands are integers. If they are float
 {% endhighlight %}
 
 Modulo: %
+
 {% highlight python %}
 >>> 1 % 5
 1
@@ -261,32 +277,41 @@ Modulo: %
 
 Comparison Operators
 These operators are:
-Greater than: {% highlight python %}
+Greater than: 
+{% highlight python %}
 >
 {% endhighlight %}
-Greater than or equal to: {% highlight python %}
+Greater than or equal to: 
+{% highlight python %}
 >=
 {% endhighlight %}
- Less than: {% highlight python %}
+ Less than: 
+{% highlight python %}
 <
 {% endhighlight %}
-Less than or equal to: {% highlight python %}
+Less than or equal to: 
+{% highlight python %}
 <=
 {% endhighlight %}
- Equal to: {% highlight python %}
+ Equal to: 
+{% highlight python %}
 ==
 {% endhighlight %}
- Not Equal to: {% highlight python %}
+ Not Equal to: 
+{% highlight python %}
 !=
 {% endhighlight %}
 
-These comparison operators make expressions that evaluate to either {% highlight python %}
+These comparison operators make expressions that evaluate to either 
+{% highlight python %}
 True
 {% endhighlight %}
- or {% highlight python %}
+ or 
+{% highlight python %}
 False
 {% endhighlight %}
 . Here we have are some examples:
+
 {% highlight python %}
 >>> 5 > 6
 False
@@ -335,6 +360,7 @@ False
 {% endhighlight %}
 
 We can also use them to compare strings based on their alphabetical order:
+
 {% highlight python %}
 >>> "Hello" > "World"
 False
@@ -351,6 +377,7 @@ True
 {% endhighlight %}
 
 We typically use them to compare the values of two or more variables:
+
 {% highlight python %}
 >>> a = 1
 >>> b = 2
@@ -376,24 +403,30 @@ True
 
 Comparison Operator Chaining
 In Python, we can use something called "comparison operator chaining" in which we chain the comparison operators to make more than one comparison more concisely. 
-For example, this checks if {% highlight python %}
+For example, this checks if 
+{% highlight python %}
 a
 {% endhighlight %}
- is less than {% highlight python %}
+ is less than 
+{% highlight python %}
 b
 {% endhighlight %}
- and if {% highlight python %}
+ and if 
+{% highlight python %}
 b
 {% endhighlight %}
- is less than {% highlight python %}
+ is less than 
+{% highlight python %}
 c
 {% endhighlight %}
 :
+
 {% highlight python %}
 a < b < c
 {% endhighlight %}
 
 Here we have some examples:
+
 {% highlight python %}
 >>> a = 1
 >>> b = 2
@@ -419,20 +452,25 @@ True
 {% endhighlight %}
 
 Logical Operators
-There are three logical operators in Python: {% highlight python %}
+There are three logical operators in Python: 
+{% highlight python %}
 and
 {% endhighlight %}
-, {% highlight python %}
+, 
+{% highlight python %}
 or
 {% endhighlight %}
-, and {% highlight python %}
+, and 
+{% highlight python %}
 not
 {% endhighlight %}
 . Each one of these operators has its own truth table and they are essential to work with conditionals.
-The {% highlight python %}
+The 
+{% highlight python %}
 and
 {% endhighlight %}
  operator:
+
 {% highlight python %}
 >>> True and True
 True
@@ -447,10 +485,12 @@ False
 False
 {% endhighlight %}
 
-The {% highlight python %}
+The 
+{% highlight python %}
 or
 {% endhighlight %}
  operator:
+
 {% highlight python %}
 >>> True or True
 True
@@ -465,10 +505,12 @@ True
 False
 {% endhighlight %}
 
-The {% highlight python %}
+The 
+{% highlight python %}
 not
 {% endhighlight %}
  operator:
+
 {% highlight python %}
 >>> not True
 False
@@ -479,6 +521,7 @@ True
 
 These operator are used to form more complex expressions that combine different operators and variables.
 For example:
+
 {% highlight python %}
 >>> a = 6
 >>> b = 3
@@ -498,36 +541,46 @@ False
 
 Assignment Operators
 Assignment operators are used to assign a value to a variable. 
-They are: {% highlight python %}
+They are: 
+{% highlight python %}
 =
 {% endhighlight %}
-, {% highlight python %}
+, 
+{% highlight python %}
 +=
 {% endhighlight %}
-, {% highlight python %}
+, 
+{% highlight python %}
 -=
 {% endhighlight %}
-, {% highlight python %}
+, 
+{% highlight python %}
 *=
 {% endhighlight %}
-, {% highlight python %}
+, 
+{% highlight python %}
 %=
 {% endhighlight %}
-, {% highlight python %}
+, 
+{% highlight python %}
 /=
 {% endhighlight %}
-, {% highlight python %}
+, 
+{% highlight python %}
 //=
 {% endhighlight %}
-, {% highlight python %}
+, 
+{% highlight python %}
 **=
 {% endhighlight %}
 
-The {% highlight python %}
+The 
+{% highlight python %}
 =
 {% endhighlight %}
  operator assigns the value to the variable.The other operators perform an operation with the current value of the variable and the new value and assigns the result to the same variable.
 For example:
+
 {% highlight python %}
 >>> x = 3
 >>> x
@@ -562,37 +615,47 @@ For example:
 1.0
 {% endhighlight %}
 
-💡 Tips: these operators perform bitwise operations before assigning the result to the variable: {% highlight python %}
+💡 Tips: these operators perform bitwise operations before assigning the result to the variable: 
+{% highlight python %}
 &=
 {% endhighlight %}
-, {% highlight python %}
+, 
+{% highlight python %}
 |=
 {% endhighlight %}
-, {% highlight python %}
+, 
+{% highlight python %}
 ^=
 {% endhighlight %}
-, {% highlight python %}
+, 
+{% highlight python %}
 >>=
 {% endhighlight %}
-, {% highlight python %}
+, 
+{% highlight python %}
 <<=
 {% endhighlight %}
 .
 Membership Operators
-You can check if an element is in a sequence or not with the operators: {% highlight python %}
+You can check if an element is in a sequence or not with the operators: 
+{% highlight python %}
 in
 {% endhighlight %}
- and {% highlight python %}
+ and 
+{% highlight python %}
 not in
 {% endhighlight %}
-. The result will be either {% highlight python %}
+. The result will be either 
+{% highlight python %}
 True
 {% endhighlight %}
- or {% highlight python %}
+ or 
+{% highlight python %}
 False
 {% endhighlight %}
 .
 For example:
+
 {% highlight python %}
 >>> 5 in [1, 2, 3, 4, 5]
 True
@@ -638,6 +701,7 @@ False
 {% endhighlight %}
 
 We typically use them with variables that store sequences, like in this example:
+
 {% highlight python %}
 >>> message = "Hello, World!"
 

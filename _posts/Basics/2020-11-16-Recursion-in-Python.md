@@ -21,6 +21,7 @@ comments: true
 
 A recursive function is a function that calls itself. These functions have a base case that stops the recursive process and a recursive case that continues the recursive process by making another recursive call.
 Here we have some examples in Python:
+
 {% highlight python %}
 def factorial(n):
     if n == 0 or n == 1:
@@ -29,6 +30,7 @@ def factorial(n):
         return n * factorial(n-1)
 {% endhighlight %}
 Recursive Factorial Function
+
 {% highlight python %}
 def fibonacci(n):
     if n == 0 or n == 1:
@@ -37,6 +39,7 @@ def fibonacci(n):
         return fibonacci(n-1) + fibonacci(n-2)
 {% endhighlight %}
 The Fibonacci Function
+
 {% highlight python %}
 def find_power(a, b):
     if b == 0:

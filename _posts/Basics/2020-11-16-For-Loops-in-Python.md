@@ -21,79 +21,99 @@ comments: true
 
 Now you know how to write conditionals in Python, so let's start diving into loops. For loops are amazing programming structures that you can use to repeat a code block a specific number of times. 
 This is the basic syntax to write a for loop in Python:
+
 {% highlight python %}
 for <loop_variable> in <iterable>:
     youre code
 {% endhighlight %}
 
-The iterable can be a list, tuple, dictionary, string, the sequence returned by range, a file, or any other type of iterable in Python. We will start with {% highlight python %}
+The iterable can be a list, tuple, dictionary, string, the sequence returned by range, a file, or any other type of iterable in Python. We will start with 
+{% highlight python %}
 range()
 {% endhighlight %}
 .
-The {% highlight python %}
+The 
+{% highlight python %}
 range()
 {% endhighlight %}
  function in Python
 This function returns a sequence of integers that we can use to determine how many iterations (repetitions) of the loop will be completed. The loop will complete one iteration per integer. 
-This is the general syntax to write a for loop with {% highlight python %}
+This is the general syntax to write a for loop with 
+{% highlight python %}
 range()
 {% endhighlight %}
 :
+
 {% highlight python %}
 for <loop_variable> in range(<start>, <stop>, <step>):
     youre code
 {% endhighlight %}
 
 As you can see, the range function has three parameters:
+
 {% highlight python %}
 start
 {% endhighlight %}
-: where the sequence of integers will start. By default, it's {% highlight python %}
+: where the sequence of integers will start. By default, it's 
+{% highlight python %}
 0
 {% endhighlight %}
-.{% highlight python %}
+.
+{% highlight python %}
 stop
 {% endhighlight %}
-: where the sequence of integers will stop (without including this value). {% highlight python %}
+: where the sequence of integers will stop (without including this value). 
+{% highlight python %}
 step
 {% endhighlight %}
-: the value that will be added to each element to get the next element in the sequence. By default, it's {% highlight python %}
+: the value that will be added to each element to get the next element in the sequence. By default, it's 
+{% highlight python %}
 1
 {% endhighlight %}
 . 
-You can pass 1, 2, or 3 arguments to {% highlight python %}
+You can pass 1, 2, or 3 arguments to 
+{% highlight python %}
 range()
 {% endhighlight %}
 :
-With 1 argument, the value is assigned to the {% highlight python %}
+With 1 argument, the value is assigned to the 
+{% highlight python %}
 stop
 {% endhighlight %}
- parameter and the default values for the other two parameters are used. With 2 arguments, the values are assigned to the {% highlight python %}
+ parameter and the default values for the other two parameters are used. With 2 arguments, the values are assigned to the 
+{% highlight python %}
 start
 {% endhighlight %}
- and {% highlight python %}
+ and 
+{% highlight python %}
 stop
 {% endhighlight %}
- parameters and the default value for {% highlight python %}
+ parameters and the default value for 
+{% highlight python %}
 step
 {% endhighlight %}
- is used.With 3 arguments, the values are assigned to the {% highlight python %}
+ is used.With 3 arguments, the values are assigned to the 
+{% highlight python %}
 start
 {% endhighlight %}
-, {% highlight python %}
+, 
+{% highlight python %}
 stop
 {% endhighlight %}
-, and {% highlight python %}
+, and 
+{% highlight python %}
 step
 {% endhighlight %}
  parameters (in order).
 Here we have some examples with one parameter:
+
 {% highlight python %}
 for i in range(5):
     print(i)
 {% endhighlight %}
 
 Output:
+
 {% highlight python %}
 0
 1
@@ -102,12 +122,14 @@ Output:
 4
 {% endhighlight %}
 
+
 {% highlight python %}
 >>> for j in range(15):
     print(j * 2)
 {% endhighlight %}
 
 Output:
+
 {% highlight python %}
 0
 2
@@ -127,12 +149,14 @@ Output:
 {% endhighlight %}
 
 In the example below, we repeat a string as many times as indicated by the value of the loop variable:
+
 {% highlight python %}
 >>> for num in range(8):
 	print("Hello" * num)
 {% endhighlight %}
 
 Output:
+
 {% highlight python %}
 Hello
 HelloHello
@@ -144,6 +168,7 @@ HelloHelloHelloHelloHelloHelloHello
 {% endhighlight %}
 
 We can also use for loops with built-in data structures such as lists:
+
 {% highlight python %}
 >>> my_list = ["a", "b", "c", "d"]
 
@@ -153,6 +178,7 @@ We can also use for loops with built-in data structures such as lists:
 {% endhighlight %}
 
 Output:
+
 {% highlight python %}
 a
 b
@@ -161,12 +187,14 @@ d
 {% endhighlight %}
 
 These are some examples with two parameters:
+
 {% highlight python %}
 >>> for i in range(2, 10):
 	print(i)
 {% endhighlight %}
 
 Output:
+
 {% highlight python %}
 2
 3
@@ -179,12 +207,14 @@ Output:
 {% endhighlight %}
 
 Code:
+
 {% highlight python %}
 >>> for j in range(2, 5):
 	print("Python" * j)
 {% endhighlight %}
 
 Output:
+
 {% highlight python %}
 PythonPython
 PythonPythonPython
@@ -192,6 +222,7 @@ PythonPythonPythonPython
 {% endhighlight %}
 
 Code:
+
 {% highlight python %}
 >>> my_list = ["a", "b", "c", "d"]
 
@@ -200,12 +231,14 @@ Code:
 {% endhighlight %}
 
 Output:
+
 {% highlight python %}
 c
 d
 {% endhighlight %}
 
 Code:
+
 {% highlight python %}
 >>> my_list = ["a", "b", "c", "d"]
 
@@ -213,17 +246,20 @@ Code:
 	my_list[i] *= i
 {% endhighlight %}
 
-Now the list is: {% highlight python %}
+Now the list is: 
+{% highlight python %}
 ['a', 'b', 'cc', 'd']
 {% endhighlight %}
 
 These are some examples with three parameters:
+
 {% highlight python %}
 >>> for i in range(3, 16, 2):
 	print(i)
 {% endhighlight %}
 
 Output:
+
 {% highlight python %}
 3
 5
@@ -235,12 +271,14 @@ Output:
 {% endhighlight %}
 
 Code:
+
 {% highlight python %}
 >>> for j in range(10, 5, -1):
 	print(j)
 {% endhighlight %}
 
 Output:
+
 {% highlight python %}
 10
 9
@@ -250,6 +288,7 @@ Output:
 {% endhighlight %}
 
 Code:
+
 {% highlight python %}
 >>> my_list = ["a", "b", "c", "d", "e", "f", "g"]
 
@@ -258,6 +297,7 @@ Code:
 {% endhighlight %}
 
 Output:
+
 {% highlight python %}
 g
 f
@@ -270,6 +310,7 @@ We can iterate directly over iterables such as lists, tuples, dictionaries, stri
 Let's see some examples:
 Iterate Over a String
 If we iterate over a string, its characters will be assigned to the loop variable one by one (including spaces and symbols).
+
 {% highlight python %}
 >>> message = "Hello, World!"
 
@@ -293,6 +334,7 @@ d
 {% endhighlight %}
 
 We can also iterate over modified copies of the string by calling a string method where we specify the iterable in the for loop. This will assign the copy of the string as the iterable that will be used for the iterations, like this:
+
 {% highlight python %}
 >>> word = "Hello"
 
@@ -306,6 +348,7 @@ l
 l
 o
 {% endhighlight %}
+
 
 {% highlight python %}
 >>> word = "Hello"
@@ -322,6 +365,7 @@ O
 {% endhighlight %}
 
 Iterate Over Lists and Tuples
+
 {% highlight python %}
 >>> my_list = [2, 3, 4, 5]
 
@@ -330,6 +374,7 @@ Iterate Over Lists and Tuples
 {% endhighlight %}
 
 The output is:
+
 {% highlight python %}
 2
 3
@@ -338,6 +383,7 @@ The output is:
 {% endhighlight %}
 
 Code:
+
 {% highlight python %}
 >>> my_list = (2, 3, 4, 5)
 
@@ -349,6 +395,7 @@ Code:
 {% endhighlight %}
 
 Output:
+
 {% highlight python %}
 Even
 Odd
@@ -359,6 +406,7 @@ Odd
 Iterate Over the Keys, Values, and Key-Value Pairs of Dictionaries
 We can iterate over the keys, values, and key-value pairs of a dictionary by calling specific dictionary methods. Let's see how.
 To iterate over the keys, we write:
+
 {% highlight python %}
 for <var> in <dictionary_variable>:
     youre code
@@ -366,6 +414,7 @@ for <var> in <dictionary_variable>:
 
 We just write the name of the variable that stores the dictionary as the iterable.
 For example:
+
 {% highlight python %}
 >>> my_dict = {"a": 1, "b": 2, "c": 3}
 
@@ -379,12 +428,14 @@ c
 {% endhighlight %}
 
 To iterate over the values, we use:
+
 {% highlight python %}
 for <var> in <dictionary_variable>.values():
     youre code
 {% endhighlight %}
 
 For example:
+
 {% highlight python %}
 >>> my_dict = {"a": 1, "b": 2, "c": 3}
 
@@ -398,10 +449,12 @@ For example:
 {% endhighlight %}
 
 To iterate over the key-value pairs, we use:
+
 {% highlight python %}
 for <key>, <value> in <dictionary_variable>.items():
     youre code
 {% endhighlight %}
+
 
 {% highlight python %}
 >>> my_dict = {"a": 1, "b": 2, "c": 3}
@@ -416,6 +469,7 @@ c 3
 {% endhighlight %}
 
 If we define only one loop variable, this variable will contain a tuple with the key-value pair:
+
 {% highlight python %}
 >>> my_dict = {"a": 1, "b": 2, "c": 3}
 >>> for pair in my_dict.items():
@@ -428,23 +482,28 @@ If we define only one loop variable, this variable will contain a tuple with the
 {% endhighlight %}
 
 Break and Continue in Python
-Now you know how to iterate over sequences in Python. We also have loop control statements to customize what happens when the loop runs: {% highlight python %}
+Now you know how to iterate over sequences in Python. We also have loop control statements to customize what happens when the loop runs: 
+{% highlight python %}
 break
 {% endhighlight %}
- and {% highlight python %}
+ and 
+{% highlight python %}
 continue
 {% endhighlight %}
 .
 The Break Statement
-The {% highlight python %}
+The 
+{% highlight python %}
 break
 {% endhighlight %}
  statement is used to stop the loop immediately. 
-When a {% highlight python %}
+When a 
+{% highlight python %}
 break
 {% endhighlight %}
  statement is found, the loop stops and the program returns to its normal execution beyond the loop.
 In the example below, we stop the loop when an even element is found. 
+
 {% highlight python %}
 >>> my_list = [1, 2, 3, 4, 5]
 
@@ -463,12 +522,14 @@ break
 {% endhighlight %}
 
 The Continue Statement
-The {% highlight python %}
+The 
+{% highlight python %}
 continue
 {% endhighlight %}
  statement is used to skip the rest of the current iteration. 
 When it is found during the execution of the loop, the current iteration stops and a new one begins with the updated value of the loop variable.
 In the example below, we skip the current iteration if the element is even and we only print the value if the element is odd:
+
 {% highlight python %}
 >>> my_list = [1, 2, 3, 4, 5]
 
@@ -487,15 +548,18 @@ Odd: 5
 {% endhighlight %}
 
 The zip() function in Python
+
 {% highlight python %}
 zip()
 {% endhighlight %}
  is an amazing built-in function that we can use in Python to iterate over multiple sequences at once, getting their corresponding elements in each iteration.
-We just need to pass the sequences as arguments to the {% highlight python %}
+We just need to pass the sequences as arguments to the 
+{% highlight python %}
 zip()
 {% endhighlight %}
  function and use this result in the loop.
 For example:
+
 {% highlight python %}
 >>> my_list1 = [1, 2, 3, 4]
 >>> my_list2 = [5, 6, 7, 8]
@@ -511,11 +575,13 @@ For example:
 {% endhighlight %}
 
 The enumerate() Function in Python
-You can also keep track of a counter while the loop runs with the {% highlight python %}
+You can also keep track of a counter while the loop runs with the 
+{% highlight python %}
 enum()
 {% endhighlight %}
  function. It is commonly used to iterate over a sequence and get the corresponding index.
 For example:
+
 {% highlight python %}
 >>> my_list = [5, 6, 7, 8]
 
@@ -528,6 +594,7 @@ For example:
 2 7
 3 8
 {% endhighlight %}
+
 
 {% highlight python %}
 >>> word = "Hello"
@@ -543,10 +610,12 @@ For example:
 4 o
 {% endhighlight %}
 
-If you start the counter from {% highlight python %}
+If you start the counter from 
+{% highlight python %}
 0
 {% endhighlight %}
 , you can use the index and the current value in the same iteration to modify the sequence:
+
 {% highlight python %}
 >>> my_list = [5, 6, 7, 8]
 
@@ -557,10 +626,12 @@ If you start the counter from {% highlight python %}
 [15, 18, 21, 24]
 {% endhighlight %}
 
-You can start the counter from a different number by passing a second argument to {% highlight python %}
+You can start the counter from a different number by passing a second argument to 
+{% highlight python %}
 enumerate()
 {% endhighlight %}
 :
+
 {% highlight python %}
 >>> word = "Hello"
 
@@ -576,20 +647,25 @@ enumerate()
 {% endhighlight %}
 
 The else Clause
-For loops also have an {% highlight python %}
+For loops also have an 
+{% highlight python %}
 else
 {% endhighlight %}
- clause. You can add this clause to the loop if you want to run a specific block of code when the loop completes all its iterations without finding the {% highlight python %}
+ clause. You can add this clause to the loop if you want to run a specific block of code when the loop completes all its iterations without finding the 
+{% highlight python %}
 break
 {% endhighlight %}
  statement.
-In the example below, we try to find an element greater than 6 in the list. That element is not found, so {% highlight python %}
+In the example below, we try to find an element greater than 6 in the list. That element is not found, so 
+{% highlight python %}
 break
 {% endhighlight %}
- doesn't run and the {% highlight python %}
+ doesn't run and the 
+{% highlight python %}
 else
 {% endhighlight %}
  clause runs.
+
 {% highlight python %}
 my_list = [1, 2, 3, 4, 5]
 
@@ -602,17 +678,21 @@ else:
 {% endhighlight %}
 
 The output is:
+
 {% highlight python %}
 Not Found
 {% endhighlight %}
 
-However, if the {% highlight python %}
+However, if the 
+{% highlight python %}
 break
 {% endhighlight %}
- statement runs, the {% highlight python %}
+ statement runs, the 
+{% highlight python %}
 else
 {% endhighlight %}
  clause doesn't run. We can see this in the example below:
+
 {% highlight python %}
 my_list = [1, 2, 3, 4, 5, 8] # Now the list has the value 8
 
@@ -625,6 +705,7 @@ else:
 {% endhighlight %}
 
 The output is:
+
 {% highlight python %}
 Found
 {% endhighlight %}

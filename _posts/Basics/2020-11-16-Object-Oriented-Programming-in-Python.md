@@ -21,6 +21,7 @@ comments: true
 
 In Object-Oriented Programming (OOP), we define classes that act as blueprints to create objects in Python with attributes and methods (functionality associated with the objects).
 This is a general syntax to define a class:
+
 {% highlight python %}
 class <className>:
 
@@ -42,49 +43,60 @@ class <className>:
 
 As you can see, a class can have many different elements so let's analyze them in detail:
 Class Header
-The first line of the class definition has the {% highlight python %}
+The first line of the class definition has the 
+{% highlight python %}
 class
 {% endhighlight %}
  keyword and the name of the class:
+
 {% highlight python %}
 class Dog:
 {% endhighlight %}
+
 
 {% highlight python %}
 class House:
 
 {% endhighlight %}
 
+
 {% highlight python %}
 class Ball:
 {% endhighlight %}
+
 
 {% highlight python %}
 class Poodle(Dog):
 {% endhighlight %}
 
+
 {% highlight python %}
 class Truck(Vehicle):
 {% endhighlight %}
+
 
 {% highlight python %}
 class Mom(FamilyMember):
 {% endhighlight %}
 
-In Python, we write class name in Upper Camel Case (also known as Pascal Case), in which each word starts with an uppercase letter. For example: {% highlight python %}
+In Python, we write class name in Upper Camel Case (also known as Pascal Case), in which each word starts with an uppercase letter. For example: 
+{% highlight python %}
 FamilyMember
 {% endhighlight %}
+
 
 {% highlight python %}
 __init__
 {% endhighlight %}
  and instance attributes
 We are going to use the class to create object in Python, just like we build real houses from blueprints. 
-The objects will have attributes that we define in the class. Usually, we initialize these attributes in {% highlight python %}
+The objects will have attributes that we define in the class. Usually, we initialize these attributes in 
+{% highlight python %}
 __init__
 {% endhighlight %}
 . This is a method that runs when we create an instance of the class. 
 This is the general syntax:
+
 {% highlight python %}
 def __init__(self, <parameter1>, <parameter2>, ...):
         self.<attribute1> = <parameter1>  # Instance attribute
@@ -96,10 +108,12 @@ def __init__(self, <parameter1>, <parameter2>, ...):
 {% endhighlight %}
 
 We specify as many parameters as needed to customize the values of the attributes of the object that will be created.
-Here is an example of a {% highlight python %}
+Here is an example of a 
+{% highlight python %}
 Dog
 {% endhighlight %}
  class with this method:
+
 {% highlight python %}
 class Dog:
 
@@ -109,16 +123,19 @@ class Dog:
 {% endhighlight %}
 
 How to Create an Instance
-To create an instance of {% highlight python %}
+To create an instance of 
+{% highlight python %}
 Dog
 {% endhighlight %}
 , we need to specify the name and age of the dog instance to assign these values to the attributes:
+
 {% highlight python %}
 my_dog = Dog("Nora", 10)
 {% endhighlight %}
 
 Great. Now we have our instance ready to be used in the program.
 Some classes will not require any arguments to create an instance. In that case, we just write empty parentheses. For example:
+
 {% highlight python %}
 class Circle:
 
@@ -127,17 +144,20 @@ class Circle:
 {% endhighlight %}
 
 To create an instance:
+
 {% highlight python %}
 >>> my_circle = Circle()
 {% endhighlight %}
 
 Default Arguments
 We can also assign default values for the attributes and give the option to the user if they would like to customize the value.
-In this case, we would write {% highlight python %}
+In this case, we would write 
+{% highlight python %}
 <attribute>=<value>
 {% endhighlight %}
  in the list of parameters. 
 This is an example:
+
 {% highlight python %}
 class Circle:
 
@@ -145,10 +165,12 @@ class Circle:
         self.radius = radius
 {% endhighlight %}
 
-Now we can create a {% highlight python %}
+Now we can create a 
+{% highlight python %}
 Circle
 {% endhighlight %}
  instance with the default value for the radius by omitting the value or customize it by passing a value:
+
 {% highlight python %}
 # Default value
 >>> my_circle1 = Circle()
@@ -159,11 +181,13 @@ Circle
 
 How to Get an Instance Attribute
 To access an instance attribute, we use this syntax:
+
 {% highlight python %}
 <object_variable>.<attribute>
 {% endhighlight %}
 
 For example:
+
 {% highlight python %}
 # Class definition
 >>> class Dog:
@@ -185,11 +209,13 @@ For example:
 
 How to Update an Instance Attribute
 To update an instance attribute, we use this syntax:
+
 {% highlight python %}
 <object_variable>.<attribute> = <new_value>
 {% endhighlight %}
 
 For example:
+
 {% highlight python %}
 >>> class Dog:
 
@@ -212,11 +238,13 @@ For example:
 
 How to Remove an Instance Attribute
 To remove an instance attribute, we use this syntax:
+
 {% highlight python %}
 del <object_variable>.<attribute>
 {% endhighlight %}
 
 For example:
+
 {% highlight python %}
 >>> class Dog:
 
@@ -241,10 +269,12 @@ AttributeError: 'Dog' object has no attribute 'name'
 {% endhighlight %}
 
 How to Delete an Instance
-Similarly, we can delete an instance using {% highlight python %}
+Similarly, we can delete an instance using 
+{% highlight python %}
 del
 {% endhighlight %}
 :
+
 {% highlight python %}
 >>> class Dog:
 
@@ -272,6 +302,7 @@ Public vs. Non-Public Attributes in Python
 In Python, we don't have access modifiers to functionally restrict access to the instance attributes, so we rely on naming conventions to specify this.
 For example, by adding a leading underscore, we can signal to other developers that an attribute is meant to be non-public. 
 For example:
+
 {% highlight python %}
 class Dog:
 
@@ -286,6 +317,7 @@ However, as the documentation also mentions:
 We don't use the term "private" here, since no attribute is really private in Python (without a generally unnecessary amount of work). - source
 Class Attributes in Python
 Class attributes are shared by all instances of the class. They all have access to this attribute and they will also be affected by any changes made to these attributes.
+
 {% highlight python %}
 class Dog:
 
@@ -300,11 +332,13 @@ class Dog:
 
 How to Get a Class Attribute
 To get the value of a class attribute, we use this syntax:
+
 {% highlight python %}
 <class_name>.<attribute>
 {% endhighlight %}
 
 For example:
+
 {% highlight python %}
 >>> class Dog:
 
@@ -321,11 +355,13 @@ For example:
 
 How to Update a Class Attribute
 To update a class attribute, we use this syntax:
+
 {% highlight python %}
 <class_name>.<attribute> = <value>
 {% endhighlight %}
 
 For example:
+
 {% highlight python %}
 >>> class Dog:
 
@@ -346,10 +382,12 @@ For example:
 {% endhighlight %}
 
 How to Delete a Class Attribute
-We use {% highlight python %}
+We use 
+{% highlight python %}
 del
 {% endhighlight %}
  to delete a class attribute. For example:
+
 {% highlight python %}
 >>> class Dog:
 
@@ -374,10 +412,12 @@ AttributeError: type object 'Dog' has no attribute 'kingdom'
 
 How to Define Methods
 Methods represent the functionality of the instances of the class.
-This is the basic syntax of a method in a class. They are usually located below {% highlight python %}
+This is the basic syntax of a method in a class. They are usually located below 
+{% highlight python %}
 __init__
 {% endhighlight %}
 : 
+
 {% highlight python %}
 class <ClassName>:
 
@@ -389,17 +429,21 @@ class <ClassName>:
         youre code
 {% endhighlight %}
 
-They may have zero, one, or more parameters if needed (just like functions!) but instance methods must always have {% highlight python %}
+They may have zero, one, or more parameters if needed (just like functions!) but instance methods must always have 
+{% highlight python %}
 self
 {% endhighlight %}
  as the first parameter.
-For example, here is a {% highlight python %}
+For example, here is a 
+{% highlight python %}
 bark
 {% endhighlight %}
- method with no parameters (in addition to {% highlight python %}
+ method with no parameters (in addition to 
+{% highlight python %}
 self
 {% endhighlight %}
 ):
+
 {% highlight python %}
 class Dog:
 
@@ -412,11 +456,13 @@ class Dog:
 {% endhighlight %}
 
 To call this method, we use this syntax:
+
 {% highlight python %}
 <object_variable>.<method>(<arguments>)
 {% endhighlight %}
 
 For example:
+
 {% highlight python %}
 # Create the instance
 >>> my_dog = Dog("Nora", 10)
@@ -426,13 +472,16 @@ For example:
 woof-woof. I'm Nora
 {% endhighlight %}
 
-Here we have a {% highlight python %}
+Here we have a 
+{% highlight python %}
 Player
 {% endhighlight %}
- class with an {% highlight python %}
+ class with an 
+{% highlight python %}
 increment_speed
 {% endhighlight %}
  method with one parameter:
+
 {% highlight python %}
 class Player:
 
@@ -445,6 +494,7 @@ class Player:
 {% endhighlight %}
 
 To call the method:
+
 {% highlight python %}
 # Create instance        
 >>> my_player = Player("Nora")
@@ -465,6 +515,7 @@ Properties, Getters and Setters in Python
 Getters and setters are methods that we can define to get and set the value of an instance attribute, respectively. They work as intermediaries to "protect" the attributes from direct changes. 
 In Python, we typically use properties instead of getters and setters. Let's see how we can use them.
 To define a property, we write a method with this syntax:
+
 {% highlight python %}
 @property
 def <property_name>(self):
@@ -473,6 +524,7 @@ def <property_name>(self):
 
 This method will act as a getter, so it will be called when we try to access the value of the attribute.
 Now, we may also want to define a setter:
+
 {% highlight python %}
 @<property_name>.setter
 def <property_name>(self, <param>):
@@ -480,6 +532,7 @@ def <property_name>(self, <param>):
 {% endhighlight %}
 
 And a deleter to delete the attribute:
+
 {% highlight python %}
 @<property_name>.deleter
 def <property_name>(self):
@@ -487,6 +540,7 @@ def <property_name>(self):
 {% endhighlight %}
 
 This is an example:
+
 {% highlight python %}
 class Dog:
 
@@ -507,6 +561,7 @@ class Dog:
 {% endhighlight %}
 
 If we add descriptive print statements, we can see that they are called when we perform their operation:
+
 {% highlight python %}
 >>> class Dog:
 
