@@ -5,15 +5,7 @@ layout: page
 #
 subheadline: "Conditionals in Python"
 title: "Conditionals in Python"
-teaser: "Now let's see how we can write conditionals to make certain parts of our code run (or not) based on whether a condition is 
-
-True
-
- or 
-
-False
-
-."
+teaser: "Now let's see how we can write conditionals to make certain parts of our code run (or not) based on whether a condition is True or False."
 categories:
   - Basics
 tags:

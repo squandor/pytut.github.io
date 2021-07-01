@@ -5,11 +5,7 @@ layout: page
 #
 subheadline: "While Loops in Python"
 title: "While Loops in Python"
-teaser: "While loops are similar to for loops in that they let us repeat a block of code. The difference is that while loops run while a condition is 
-
-True
-
-. "
+teaser: "While loops are similar to for loops in that they let us repeat a block of code. The difference is that while loops run while a condition is True. "
 categories:
   - Basics
 tags:
