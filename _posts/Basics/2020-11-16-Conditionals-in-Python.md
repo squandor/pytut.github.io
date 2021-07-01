@@ -28,15 +28,6 @@ mediaplayer: false
 comments: true
 ---
 
-Now let's see how we can write conditionals to make certain parts of our code run (or not) based on whether a condition is 
-{% highlight python %}
-True
-{% endhighlight %}
- or 
-{% highlight python %}
-False
-{% endhighlight %}
-.
 
 {% highlight python %}
 if
